@@ -1,4 +1,4 @@
-# Dino Runner
+# Dino Game
 
 A simple, engaging browser-based game inspired by the classic Chrome Dino Runner. Built with JavaScript and GSAP for smooth animations.
 
