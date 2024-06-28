@@ -1,2 +1,37 @@
-# dino-game
-Dino Runner: A browser game inspired by Chrome's offline dinosaur game. Built with JavaScript and GSAP, it features a jumping dino, obstacles, and score tracking. Players use spacebar to avoid collisions. This project showcases basic game mechanics and animations, serving as a coding exercise for browser game development.
+# Dino Runner
+
+A simple, engaging browser-based game inspired by the classic Chrome Dino Runner. Built with JavaScript and GSAP for smooth animations.
+
+## Features
+
+- Responsive dino character that jumps with spacebar input
+- Randomly generated obstacles
+- Score tracking system
+- Game over screen with restart functionality
+- Smooth animations powered by GSAP
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- GSAP (GreenSock Animation Platform)
+
+## How to Play
+
+Press the spacebar to make the dino jump over incoming obstacles. The game ends if the dino collides with an obstacle. Your score increases as you successfully avoid obstacles.
+
+## Installation
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Start playing!
+
+## Future Enhancements
+
+- Mobile touch support
+- Multiple obstacle types
+- High score leaderboard
+- Sound effects and background music
+
+Feel free to contribute, report issues, or suggest improvements!
