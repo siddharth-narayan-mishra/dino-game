@@ -4,24 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dino Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
   </head>
   <body>
-
     <div id="world">
+      <div id="background">
+        <div id="night-sky">
+          <img src="./assets/night.png" alt="" />
+          <img src="./assets/night.png" alt="" />
+          <img src="./assets/night.png" alt="" />
+          <img src="./assets/night.png" alt="" />
+          <img src="./assets/night.png" alt="" />
+          <img src="./assets/night.png" alt="" />
+        </div>
+        <div id="mountain">
+          <img src="./assets/mountain.png" alt="" />
+          <img src="./assets/mountain.png" alt="" />
+          <img src="./assets/mountain.png" alt="" />
+          <img src="./assets/mountain.png" alt="" />
+        </div>
+      </div>
       <div id="score">
-        <h1>Score : <span id="score-number">0</span></h1>
+        <h1>Score:<span id="score-number">0</span></h1>
+        <h1>Highest:<span id="highest-score">0</span></h1>
       </div>
       <div id="game-over">
-        <h1>Game Over
-        </h1>
+        <h1>Game Over</h1>
         <button id="restart-button">Restart Game</button>
       </div>
-      <div id="dino"></div>
-      <div id="obstacle">
-        <div class="obstacle"></div>
+      <div id="dino">
+        <img src="./assets/dino-sprites/idle1.png" alt="" id="dino-sprite" />
       </div>
-      <div id="ground"></div>
+      <div id="obstacle">
+        <div class="obstacle">
+          <img src="./assets/rock1.png" alt="" />
+        </div>
+      </div>
+      <div id="ground">
+        <img src="./assets/ground.png" alt="" />
+        <img src="./assets/ground.png" alt="" />
+      </div>
     </div>
 
     <script type="module" src="/main.js"></script>
