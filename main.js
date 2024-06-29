@@ -1,4 +1,42 @@
 import { gsap } from "gsap"
+import idle1 from "./assets/idle1.png"
+import idle2 from "./assets/idle2.png"
+import idle3 from "./assets/idle3.png"
+import idle4 from "./assets/idle4.png"
+import idle5 from "./assets/idle5.png"
+import idle6 from "./assets/idle6.png"
+import idle7 from "./assets/idle7.png"
+import idle8 from "./assets/idle8.png"
+import idle9 from "./assets/idle9.png"
+import idle10 from "./assets/idle10.png"
+import dead1 from "./assets/dead1.png"
+import dead2 from "./assets/dead2.png"
+import dead3 from "./assets/dead3.png"
+import dead4 from "./assets/dead4.png"
+import dead5 from "./assets/dead5.png"
+import dead6 from "./assets/dead6.png"
+import dead7 from "./assets/dead7.png"
+import dead8 from "./assets/dead8.png"
+import jump1 from "./assets/jump1.png"
+import jump2 from "./assets/jump2.png"
+import jump3 from "./assets/jump3.png"
+import jump4 from "./assets/jump4.png"
+import jump5 from "./assets/jump5.png"
+import jump6 from "./assets/jump6.png"
+import jump7 from "./assets/jump7.png"
+import jump8 from "./assets/jump8.png"
+import jump9 from "./assets/jump9.png"
+import jump10 from "./assets/jump10.png"
+import jump11 from "./assets/jump11.png"
+import jump12 from "./assets/jump12.png"
+import run1 from "./assets/run1.png"
+import run2 from "./assets/run2.png"
+import run3 from "./assets/run3.png"
+import run4 from "./assets/run4.png"
+import run5 from "./assets/run5.png"
+import run6 from "./assets/run6.png"
+import run7 from "./assets/run7.png"
+import run8 from "./assets/run8.png"
 
 // DOM elements
 const dino = document.getElementById("dino")
@@ -180,7 +218,7 @@ function playJumpAnimation() {
   jumpInterval = setInterval(() => {
     if (jumpFrame < totalJumpFrames) {
       if (jumpFrame != 0) {
-        image.src = `/assets/jump${jumpFrame}.png`
+        image.src = eval(`jump${jumpFrame}`)
       }
       jumpFrame++
     } else {
@@ -197,7 +235,7 @@ function playDeathAnimation() {
   const deathInterval = setInterval(() => {
     if (deathFrame < totalDeathFrames) {
       if (deathFrame != 0) {
-        image.src = `/assets/dead${deathFrame}.png`
+        image.src = eval(`dead${deathFrame}`)
       }
       deathFrame++
     } else {
@@ -240,7 +278,7 @@ function updateFrame() {
 
   currentFrame = (currentFrame + 1) % totalFrames
   if (currentFrame !== 0) {
-    image.src = `/assets/${sprite}${currentFrame}.png`
+    image.src = eval(`${sprite}${currentFrame}`)
   }
 }
 
