@@ -180,7 +180,7 @@ function playJumpAnimation() {
   jumpInterval = setInterval(() => {
     if (jumpFrame < totalJumpFrames) {
       if (jumpFrame != 0) {
-        image.src = `./assets/dino-sprites/jump${jumpFrame}.png`
+        image.src = `./assets/jump${jumpFrame}.png`
       }
       jumpFrame++
     } else {
@@ -197,7 +197,7 @@ function playDeathAnimation() {
   const deathInterval = setInterval(() => {
     if (deathFrame < totalDeathFrames) {
       if (deathFrame != 0) {
-        image.src = `./assets/dino-sprites/dead${deathFrame}.png`
+        image.src = `./assets/dead${deathFrame}.png`
       }
       deathFrame++
     } else {
@@ -240,7 +240,7 @@ function updateFrame() {
 
   currentFrame = (currentFrame + 1) % totalFrames
   if (currentFrame !== 0) {
-    image.src = `./assets/dino-sprites/${sprite}${currentFrame}.png`
+    image.src = `./assets/${sprite}${currentFrame}.png`
   }
 }
 
